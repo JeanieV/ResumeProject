@@ -17,6 +17,7 @@ h1 {
 p1 {
 color: #EED6D3;
 font-size: large;
+display: block;
 }
 
 #heading {
