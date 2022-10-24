@@ -7,6 +7,15 @@ body{
   font-family: Tahoma;
   font-size:110%;
   background-color: #F9F1F0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
+  
 }
 
 h1 {
@@ -14,15 +23,26 @@ h1 {
   font-size: xx-large;
 }
 
-p1 {
+.P1 {
 color: #EED6D3;
 font-size: large;
-display: block;
+
 }
 
 #heading {
   font-family: Tahoma;
 }
+
+#ProfilePhoto {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+border-style: solid;
+border-color: #009B81;
+border-width: 5px;
+}
+
 
 a:link, a:visited {
   color: #009B81;
@@ -30,18 +50,23 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-
 #top {
   background-color: #67595E;
   font-size: 100%;
   width: max-content;
-  padding-inline-end: 50px;
+  padding-inline-end: 60px;
+  border-style: solid;
+  border-color: #009B81;
+  border-width: 5px;
 }
 
 ul.a {
 list-style-type: none;
 text-align: left;
+padding: 15%;
 }
+
+
 
 h2.H {
 font-size: x-large;
@@ -52,11 +77,13 @@ text-align: center;
 
 h2.M {
   color: #EED6D3;
+  padding: 2%;
 }
 
 h3 {
   color: #2B6E58
 }
+
 footer {
   background-color: #67595E;
   text-align: center;
