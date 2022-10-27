@@ -4,99 +4,103 @@ header {
   border-style: solid;
   border-color: #009B81;
   border-width: 5px;
+  padding-bottom: 20px;
 }
 
-body{
+body {
   font-family: Tahoma;
-  font-size:110%;
+  font-size: 110%;
   background-color: #F9F1F0;
   display: flex;
   flex-direction: column;
-  
+}
+
+.Menu {
+  background-color: #67595E;
+  overflow: hidden;
+}
+
+.Menu a {
+  float: center;
+  color: #009B81;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  padding-top: 20px;
+  border-style: solid;
+}
+
+.Menu a:hover {
+  background-color: #EED6D3;
+  color: #009B81;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   overflow: unset;
+  margin-left: 20px;
 }
 
 main {
   display: flex;
-
 }
 
-#top {
+.Introduction {
   background-color: #67595E;
   font-size: 100%;
-  width: max-content;
-  padding-inline-end: 50px;
+  width: 60%;
   border-style: solid;
   border-color: #009B81;
   border-width: 5px;
-  border-top: 0;
-}
-h1 {
-  color: #EED6D3;
-  font-size: xx-large;
+  border-top: 0px;
+  border-bottom: 0px;
 }
 
 .P1 {
-color: #EED6D3;
-font-size: large;
-padding-bottom: 20px;
-margin: 100px;
+  color: #EED6D3;
+  font-size: medium;
+  word-spacing: 3px;
 }
 
-#heading {
-  font-family: Tahoma;
+h1 {
+  color: #EED6D3;
+  font-size: x-large;
+  padding-left: 10px;
 }
 
-#ProfilePhoto {
-width: 200px;
-height: 200px;
-object-fit: cover;
-border-radius: 50%;
-border-style: solid;
-border-color: #009B81;
-border-width: 5px;
-margin-left: 35px;
-margin-top: 20px;
+.ProfilePhoto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #009B81;
+  border-width: 5px;
+  margin-left: 75px;
+  margin-top: 20px;
 }
 
 .LinkedIn {
   width: 50px;
+  padding: 20px;
 }
 
 .Gmail {
   width: 50px;
+  padding: 20px;
 }
-
-a:link, a:visited {
-  color: #009B81;
-  display: flexbox;
-  text-decoration: none;
-}
-
-
-ul.a {
-list-style-type: none;
-text-align: left;
-padding: 15%;
-}
-
-
 
 h2.H {
-font-size: x-large;
-color: #EED6D3;
-background-color: #67595E;
-text-align: center;
+  font-size: x-large;
+  color: #EED6D3;
+  background-color: #67595E;
+  text-align: center;
 }
 
 h2 {
-margin: 15px;
-
+  margin: 15px;
 }
 
 h2.M {
@@ -111,5 +115,7 @@ h3 {
 footer {
   background-color: #67595E;
   text-align: center;
+  border-style: solid;
+  border-color: #009B81;
+  border-width: 5px;
 }
-
