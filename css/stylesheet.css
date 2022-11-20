@@ -42,7 +42,10 @@ body {
   flex-direction: column;
   overflow: unset;
   margin-left: 20px;
+  background-image: url("large.jpg");
+  
 }
+
 
 main {
   display: flex;
@@ -89,6 +92,66 @@ h1 {
 .LinkedIn {
   width: 50px;
   padding: 20px;
+}
+
+.LinkedIn:hover {
+  animation-name: LinkedInLogo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes LinkedInLogo {
+  0% {
+    border-style: dashed;
+    border-color: #47484A;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    border-width: 7px;
+    width: 50px;
+    filter: brightness(150%)
+  }
+
+  25% {
+    border-style: dashed;
+    border-color: #EED6D3;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    border-width: 4px;
+    width: 50px;
+    filter: brightness(100%)
+  }
+
+  50% {
+    border-style: dashed;
+    border-color: #D49796;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    border-width: 7px;
+    width: 50px;
+    filter: brightness(100%)
+  }
+
+  75% {
+    border-style: dashed;
+    border-color: #EED6D3;
+    border-radius: 50%;
+    transform-style: rotate(360deg);
+    border-width: 4px;
+    width: 50px;
+    filter: brightness(100%)
+  }
+
+  100% {
+    border-style: dashed;
+    border-color: #D49796;
+    border-radius: 50%;
+    transform-style: rotate(360deg);
+    border-width: 7px;
+    width: 50px;
+    filter: brightness(150%);
+  }
 }
 
 .Gmail {
