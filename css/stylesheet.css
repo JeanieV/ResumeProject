@@ -1,39 +1,63 @@
 header {
-  background-color: #47484A;
+  background-color: transparent;
   text-align: center;
   padding-bottom: 30px;
 }
 
 body {
   font-family: Tahoma;
-  font-size: 110%;
+  font-size: 20px;
   background-color: #DBCAC0;
   display: flex;
   flex-direction: column;
 }
 
 /* Menu on top of the Resume*/
+
+.header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.background {
+  filter: blur(4.5px);
+  position: sticky;
+  z-index: -1;
+}
+
+.b_image {
+  width: 100vw;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+  text-align: center;
+  display: grid;
+}
+
 .Menu {
-  background-color: #47484A;
+  background-color: transparent;
   overflow: hidden;
 }
 
 .Menu a {
-  float: center;
+  display: inline-block;
   color: #D49796;
   text-align: center;
   padding: 40px 40px;
   text-decoration: none;
   font-size: 25px;
   padding-top: 20px;
-  border-style: solid;
-  border-top: 0;
-  border-bottom: 0;
 }
 
 .Menu a:hover {
   background-color: #D49796;
   color: #DBCAC0;
+  transform: scale(1.1);
 }
 
 
@@ -42,10 +66,8 @@ body {
   flex-direction: column;
   overflow: unset;
   margin-left: 20px;
-  background-image: url("large.jpg");
-  
-}
 
+}
 
 main {
   display: flex;
@@ -63,7 +85,7 @@ main {
   font-size: 20px;
   word-spacing: 3px;
   display: inline-block;
-  padding: 30px; 
+  padding: 30px;
   padding-top: 50px;
   white-space: pre-line;
 }
@@ -92,66 +114,6 @@ h1 {
 .LinkedIn {
   width: 50px;
   padding: 20px;
-}
-
-.LinkedIn:hover {
-  animation-name: LinkedInLogo;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-play-state: running;
-}
-
-@keyframes LinkedInLogo {
-  0% {
-    border-style: dashed;
-    border-color: #47484A;
-    border-radius: 50%;
-    transform: rotate(360deg);
-    border-width: 7px;
-    width: 50px;
-    filter: brightness(150%)
-  }
-
-  25% {
-    border-style: dashed;
-    border-color: #EED6D3;
-    border-radius: 50%;
-    transform: rotate(360deg);
-    border-width: 4px;
-    width: 50px;
-    filter: brightness(100%)
-  }
-
-  50% {
-    border-style: dashed;
-    border-color: #D49796;
-    border-radius: 50%;
-    transform: rotate(360deg);
-    border-width: 7px;
-    width: 50px;
-    filter: brightness(100%)
-  }
-
-  75% {
-    border-style: dashed;
-    border-color: #EED6D3;
-    border-radius: 50%;
-    transform-style: rotate(360deg);
-    border-width: 4px;
-    width: 50px;
-    filter: brightness(100%)
-  }
-
-  100% {
-    border-style: dashed;
-    border-color: #D49796;
-    border-radius: 50%;
-    transform-style: rotate(360deg);
-    border-width: 7px;
-    width: 50px;
-    filter: brightness(150%);
-  }
 }
 
 .Gmail {

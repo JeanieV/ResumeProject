@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title> Resumé </title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 
 <body>
-    <header>
-        <!--This is the menu part on the top of the Resume 6-->
-        <h1> Menu</h1>
+    <header id="header">
         <nav>
-            <div class="Menu">
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#achievements">Achievements and Leadership</a>
-                <a href="#training">Training</a>
-                <a href="#skills">Skills</a>
+            <div class="container">
+                <h1> Menu </h1>
+                <div class="Menu">
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#achievements">Achievements and Leadership</a>
+                    <a href="#training">Training</a>
+                    <a href="#skills">Skills</a>
+                </div>
             </div>
         </nav>
+        <div class="background">
+            <picture>
+                <source srcset="./images/small.jpg" media="(max-width: 500px)">
+                <source srcset="./images/medium.jpg" media="(max-width: 1000px)">
+                <source srcset="./images/large.jpg" media="(max-width: 1500px)">
+                <img class="b_image" src="./images/large.jpg" alt="Background Image">
+            </picture>
+        </div>
+        
+        
     </header>
 
     <!--This is the introduction part and the profile picture-->
@@ -38,11 +51,12 @@
                 After studying BCom Business Management at the University of Pretoria, I specialized my degree
                 in Business Analytics at the University of Cape Town and Software Development at CodeSpace Academy.
             </p1>
+
         </div>
 
         <!--This is the content part of the Resume 6-->
         <article>
-            
+
             <div class="content">
                 <section>
                     <h2 id="education">Education </h2>
