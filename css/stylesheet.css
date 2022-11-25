@@ -1,3 +1,4 @@
+/* Header of website */
 header {
   background-color: transparent;
   text-align: center;
@@ -5,23 +6,27 @@ header {
   margin-right: 0;
 }
 
+/* Body of website */
 body {
   font-family: Tahoma;
   font-size: 20px;
   background-color: #DBCAC0;
+}
+
+/* Grid of website */
+.new {
   display: grid;
   grid-template-areas:
-    "header    header"
-    "name      article"
-    "footer    footer";
-  grid-template-rows: 110vw 170vw 15vw;
-  grid-template-columns: 15vw 100vw;
-  grid-gap: 10px;
-  margin-right: 0;
+  "header"
+  "main"
+  "footer";
+grid-template-rows: 110% 170% 30%;
+grid-template-columns: 100%;
+grid-gap: 10px;
+margin: 0;
 }
 
 /* Menu on top of the Resume*/
-
 .header {
   grid-area: header;
   background-position: center;
@@ -41,17 +46,17 @@ body {
 /* Background Image */
 .b_image {
   grid-area: header;
-  width: 100vw;
-  height: 120vw;
-  margin-right: 0;
-  max-width: 110vw;
-  max-height: 110vw;
+  width: 100%;
+  height: 100%;
+  max-width: 110%;
+  max-height: 110%;
 }
 
+/*Everything about the menu*/
 .container {
   grid-area: header;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   display: block;
   font-size: large;
@@ -78,53 +83,44 @@ body {
 .Menu a:hover {
   grid-area: header;
   background-color: #D49796;
-  color: #DBCAC0;
+  color: black;
   transform: scale(1.1);
 }
 
-main {
-  grid-area: article;
-  display: grid;
+/*Content part of website*/
+.content {
+  width: 100%;
+  grid-area: main;
+  padding-top: 0;
 }
 
-.content {
-  width: 80vw;
-  display: grid;
-  margin: 0;
-  padding-left: 45px;
+article {
+  margin-left: 17%;
+  grid-area: main;
 }
 
 /* Introduction statement*/
 .Introduction {
-  grid-area: name;
-  display: grid;
-  position: fixed;
-  flex-wrap: nowrap;
   top: 0;
   left: 0;
+  position: sticky;
 }
 
 .ProfilePhoto {
   width: 200px;
   height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: #D49796;
-  border-width: 5px;
-  margin: 0;
 }
 
 h1 {
   color: #EED6D3;
   font-size: x-large;
-  padding-left: 10px;
   padding-top: 20px;
   margin-right: 0;
 }
 
 h1.a {
   color: #47484A;
+  text-align: center;
 }
 
 .P1 {
@@ -143,8 +139,6 @@ h1.a {
 .P1:hover {
   background-color: #47484A;
 }
-
-
 
 /* Contact Details*/
 .LinkedIn {
@@ -184,14 +178,15 @@ h3 {
   color: #47484A;
 }
 
+/* Footer of website */
 footer {
   grid-area: footer;
+  grid-column-start: 1;
   background-color: #47484A;
   text-align: center;
   margin: 0;
   padding: 0;
-  width: 100vw;
-
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -202,7 +197,7 @@ footer {
     word-spacing: 3px;
     white-space: pre-line;
     margin: 0;
-    grid-area: article;
+    
   }
 
   .container {
