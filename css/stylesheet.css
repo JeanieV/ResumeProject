@@ -22,7 +22,6 @@ header {
   text-align: center;
   text-decoration: none;
   font-size: 29px;
-
 }
 
 .Menu a:hover {
@@ -135,3 +134,40 @@ footer {
   background-color: #47484A;
   text-align: center;
 }
+
+/*
+@media only screen and (min-width: 901px) {
+  .Menu a {
+    font-size: 29px;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  .Menu a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Menu a {
+    font-size: 10px;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+  }
+
+  .responsiveClass {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .responsiveClass .card_img {
+    margin: auto;
+  }
+}
+*/
