@@ -1,142 +1,71 @@
 /* Header of website */
 header {
-  background-color: transparent;
   text-align: center;
-  padding-bottom: 30px;
-  margin-right: 0;
-}
-
-/* Body of website */
-body {
-  font-family: Tahoma;
-  font-size: 20px;
-  background-color: #DBCAC0;
-}
-
-/* Grid of website */
-.new {
-  display: grid;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
-grid-template-rows: 110% 170% 30%;
-grid-template-columns: 100%;
-grid-gap: 10px;
-margin: 0;
-}
-
-/* Menu on top of the Resume*/
-.header {
-  grid-area: header;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .background {
-  grid-area: header;
-  filter: blur(5.5px);
-  position: sticky;
-  z-index: -1;
-  margin-right: 0;
+  background-color: #EED6D3;
 }
 
 /* Background Image */
-.b_image {
-  grid-area: header;
+.bg-img {
   width: 100%;
   height: 100%;
-  max-width: 110%;
-  max-height: 110%;
+  filter: blur(5.5px);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*Everything about the menu*/
-.container {
-  grid-area: header;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  display: block;
-  font-size: large;
-}
-
-.Menu {
-  grid-area: header;
-  background-color: transparent;
-  overflow: hidden;
-  position: relative;
-}
-
 .Menu a {
-  grid-area: header;
-  display: inline-block;
   color: #D49796;
   text-align: center;
-  padding: 40px 40px;
   text-decoration: none;
-  font-size: 25px;
-  padding-top: 20px;
+  font-size: 29px;
+
 }
 
 .Menu a:hover {
-  grid-area: header;
   background-color: #D49796;
   color: black;
   transform: scale(1.1);
 }
 
 /*Content part of website*/
-.content {
-  width: 100%;
-  grid-area: main;
-  padding-top: 0;
+.card {
+  position: relative;
+  border-radius: solid;
 }
 
-article {
-  margin-left: 17%;
-  grid-area: main;
+
+.card_img {
+  float: left;
+  width: 300px;
+  height: 330px;
+  overflow: hidden;
+  border: #DCAE96 solid 7px;
 }
 
-/* Introduction statement*/
-.Introduction {
-  top: 0;
-  left: 0;
-  position: sticky;
+.profile {
+  width: 300px;
+  height: 330px;
 }
 
-.ProfilePhoto {
-  width: 200px;
-  height: 200px;
+li.borderless {
+  border: 0 none;
 }
 
 h1 {
-  color: #EED6D3;
-  font-size: x-large;
-  padding-top: 20px;
-  margin-right: 0;
+  color: #DCAE96;
 }
 
-h1.a {
-  color: #47484A;
-  text-align: center;
-}
-
-.P1 {
+.p1 {
   color: #D49796;
-  font-size: 30px;
-  word-spacing: 3px;
-  display: block;
-  margin-top: 15vw;
-  margin-left: 35vw;
-  margin-right: 35vw;
-  white-space: pre-line;
-  margin-bottom: 15vw;
-  padding: 5px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.P1:hover {
+.p1:hover {
   background-color: #47484A;
 }
 
@@ -167,57 +96,42 @@ h3 {
 }
 
 .CodeSpace {
-  color: #47484A;
+  color: #DCAE96;
+  text-decoration: none;
+}
+.CodeSpace:hover {
+  background-color: #47484A;
+  color: #DCAE96;
+  transform: scale(1.1);
+  padding: 3px;
 }
 
 .UP {
-  color: #47484A;
+  color: #DCAE96;
+  text-decoration: none;
+}
+
+.UP:hover {
+  background-color: #47484A;
+  color: #DCAE96;
+  transform: scale(1.1);
+  padding: 3px;
 }
 
 .HFM {
-  color: #47484A;
+  color: #DCAE96;
+  text-decoration: none;
+}
+
+.HFM:hover {
+  background-color: #47484A;
+  color: #DCAE96;
+  transform: scale(1.1);
+  padding: 3px;
 }
 
 /* Footer of website */
 footer {
-  grid-area: footer;
-  grid-column-start: 1;
   background-color: #47484A;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-@media screen and (max-width: 480px) {
-
-  .P1 {
-    color: #D49796;
-    font-size: 5px;
-    word-spacing: 3px;
-    white-space: pre-line;
-    margin: 0;
-    
-  }
-
-  .container {
-    font-size: 5px;
-    position: absolute;
-    text-align: center;
-    margin: 0;
-  }
-
-  .background {
-    filter: blur(4.5px);
-    position: sticky;
-    z-index: -1;
-  }
-
-  .b_image {
-    width: 100vw;
-  }
-
-  .Menu {
-    float: left;
-  }
 }
