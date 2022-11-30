@@ -31,14 +31,17 @@ header {
 }
 
 /*Content part of website*/
-.card {
-  position: relative;
-  border-radius: solid;
+
+.column {
+  width: 50%;
 }
 
+.card {
+width: 100%;
+}
 
 .card_img {
-  float: left;
+  position: relative;
   width: 300px;
   height: 330px;
   overflow: hidden;
@@ -48,10 +51,7 @@ header {
 .profile {
   width: 300px;
   height: 330px;
-}
-
-li.borderless {
-  border: 0 none;
+  border: #DCAE96 solid 7px;
 }
 
 h1 {
@@ -79,15 +79,6 @@ h1 {
   padding: 20px;
 }
 
-/* Heading 2 tags*/
-h2 {
-  font-size: larger;
-  color: #DCAE96;
-  background-color: #47484A;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 
 /*Heading 3 tags*/
 h3 {
@@ -95,8 +86,9 @@ h3 {
 }
 
 .CodeSpace {
-  color: #DCAE96;
+  color: #D49796;
   text-decoration: none;
+  font-size: 20px;
 }
 .CodeSpace:hover {
   background-color: #47484A;
@@ -106,8 +98,9 @@ h3 {
 }
 
 .UP {
-  color: #DCAE96;
+  color: #D49796;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .UP:hover {
@@ -118,8 +111,9 @@ h3 {
 }
 
 .HFM {
-  color: #DCAE96;
+  color: #D49796;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .HFM:hover {
