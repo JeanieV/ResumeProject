@@ -4,8 +4,10 @@ header {
 }
 
 .background {
-  background-color: #EED6D3;
+  background-color: #47484A;
 }
+
+
 
 /* Background Image */
 .bg-img {
@@ -37,10 +39,6 @@ header {
   height: 50%;
 }
 
-.skills {
-  width: 100%;
-  display: inline-block;
-}
 
 .card {
 width: 100%;
@@ -57,7 +55,6 @@ width: 100%;
 .profile {
   width: 300px;
   height: 330px;
-  border: #DCAE96 solid 7px;
 }
 .codespace {
   width: 200px;
@@ -68,6 +65,8 @@ width: 100%;
   width: 200px;
   height: 200px;
 }
+
+
 
 h1 {
   color: #DCAE96;
