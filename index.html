@@ -41,6 +41,7 @@
                                 </div>
 
                                 <p1 class=" p1 d-inline-block h3 mx-5 p-5 lh-lg mb-5">
+                                    <h1 class="display-3 pt-2 pb-5"> Jeanie Beatrix Susanna Venter </h1>
                                     I am an innovative, friendly and
                                     hardworking person who has the ability to work well
                                     under pressure with a 'can do' attitude.
@@ -58,64 +59,82 @@
                                 </p1>
 
                                 <!-- Form-->
-                                <div class="d-flex align-items-center justify-content-center p-5">
+                                <div class="d-flex align-items-center justify-content-center p-2">
                                     <div class="form">
-                                        <form action="/action_page.php" method="POST">
+                                        <form action="/action_page.php" method="POST" class="was-validated">
 
-                                            <h1 class="display-3 pt-2"> Send me an email </h1>
-                                            <p class="h3"> Kindly enter this form </p>
-                                            <div class="my-4">
+                                            <h1 class="display-3"> Have any questions? </h1>
+                                            <p class="h4"> Kindly enter this form </p>
+
+                                            <!-- Name-->
+                                            <div class="my-3">
                                                 <label class="LB d-block" for="fname"> First Name: </label>
                                                 <input class="IP" type="text" id="fname" name="fname"
-                                                    placeholder="Enter your first name.." required pattern="[a-zA-Z]+"
-                                                    oninvalid="setCustomValidity('Enter alphabet letters only.. ')">
+                                                    placeholder="Enter your first name.." required pattern="[a-zA-Z]+">
+                                                <div class="valid-feedback"> Valid. </div>
+                                                <div class="invalid-feedback"> Enter alphabet letters only. </div>
                                             </div>
 
-                                            <div class="my-4">
+                                            <!-- Surname-->
+                                            <div class="my-3">
                                                 <label class="LB d-block" for="lname"> Last Name: </label>
                                                 <input class="IP" type="text" id="lname" name="lname"
-                                                    placeholder="Enter your last name.." required pattern="[a-zA-Z]+"
-                                                    oninvalid="setCustomValidity('Enter alphabet letters only.. ')">
+                                                    placeholder="Enter your last name.." required pattern="[a-zA-Z]+">
+                                                <div class="valid-feedback"> Valid. </div>
+                                                <div class="invalid-feedback"> Enter alphabet letters only. </div>
                                             </div>
 
-                                            <div class="my-4">
+                                            <!-- Country-->
+                                            <div class="my-3">
                                                 <label class="LB d-block" for="country"> Country: </label>
                                                 <select class="DD" id="country" name="country" required>
-                                                    <option hidden selected> Select a country..</option>
+                                                    <option value=""> Select your country </option>
                                                     <option value="southafrica"> South Africa </option>
                                                     <option value="australia"> Australia </option>
                                                     <option value="canada"> Canada </option>
                                                     <option value="usa"> USA </option>
                                                 </select>
+                                                <div class="valid-feedback"> Valid. </div>
+                                                <div class="invalid-feedback"> Choose your country </div>
                                             </div>
 
-                                            <div class="my-4">
+                                            <!-- Zip Code-->
+                                            <div class="my-3">
                                                 <label class="LB d-block" for="zip"> ZIP Code: </label>
                                                 <input class="IP" type="number" id="zip" name="zip"
                                                     placeholder="Enter your ZIP code.." required>
+                                                <div class="valid-feedback"> Valid. </div>
+                                                <div class="invalid-feedback"> Enter your Zip Code </div>
                                             </div>
 
-                                            <div class="my-4">
+                                            <!-- Email-->
+                                            <div class="my-3">
                                                 <label class="LB d-block" for="email"> Email: </label>
                                                 <input class="IP" type="email" id="email" name="email"
-                                                    placeholder="Enter your Email.." required
-                                                    pattern="[a-z0-9. _%+-]+@[a-z0-9. -]+\. [a-z]{2,}$"
-                                                    title="Enter a valid email address for example [test@test.com]">
+                                                    placeholder="Enter your Email.."
+                                                    pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                                    required>
+                                                <div class="valid-feedback"> Valid. </div>
+                                                <div class="invalid-feedback"> Enter a valid email address </div>
                                             </div>
 
                                             <div class="my-4">
                                                 <label class="LB d-block" for="language"> Language: </label>
                                                 <div class="IP">
-                                                    <input class="p-2" type="checkbox" id="language" name="language" required>
+                                                    <input class="p-2" type="checkbox" id="language" name="language"
+                                                        required>
                                                     <label for="language"> Afrikaans </label>
-                                                    <input class="p-2" type="checkbox" id="language" name="language" required>
+                                                    <input class="p-2" type="checkbox" id="language" name="language"
+                                                        required>
                                                     <label for="language"> English </label>
-                                                    <input class="p-2" type="checkbox" id="language" name="language" required>
+                                                    <input class="p-2" type="checkbox" id="language" name="language"
+                                                        required>
                                                     <label for="language"> Other </label>
                                                 </div>
                                             </div>
 
-                                            <div class="my-4">
+                                            <!-- Work-->
+                                            <div class="my-3">
                                                 <label class="LB d-block" for="work"> Work: </label>
                                                 <div class="IP">
                                                     <input type="radio" id="work" name="work" required>
@@ -125,8 +144,9 @@
                                                 </div>
                                             </div>
 
-                                            <div class="my-4">
-                                                <label class="LB d-block" for="about"> About: </label>
+                                            <!-- Question-->
+                                            <div class="my-3">
+                                                <label class="LB d-block" for="about"> Question: </label>
                                                 <textarea id="about" name="about"
                                                     placeholder="Write something.."></textarea>
                                             </div>
@@ -156,7 +176,6 @@
                         <div class="card text-center py-4">
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="education">Education
-                                    <h3 class="card-subtitle my-2"> Jeanie Beatrix Susanna Venter </h3>
                                 </div>
                                 <div class="card_img">
                                     <img class="codespace" src="./images/codespace.jpg" alt="codespace"
@@ -206,7 +225,6 @@
                         <div class="card text-center py-4 d-flex align-items-stretch">
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="experience"> Experience
-                                    <h3 class="card-subtitle my-2"> Jeanie Beatrix Susanna Venter </h3>
                                 </div>
                                 <div class="card_img">
                                     <img class="tutors" src="./images/123tutors.png" alt="123tutors" title="123tutors"
@@ -258,7 +276,6 @@
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="achievements"> Achievements and
                                     Leadership
-                                    <h3 class="card-subtitle my-2"> Jeanie Beatrix Susanna Venter </h3>
                                 </div>
                                 <div class="card_img">
                                     <img src="./images/golden.jfif" alt="Golden Key Society" title="Golden Key Society"
@@ -286,7 +303,6 @@
                         <div class="card text-center py-4">
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="training"> Training
-                                    <h3 class="card-subtitle my-2"> Jeanie Beatrix Susanna Venter </h3>
                                 </div>
 
                                 <div class="card_content">
@@ -328,7 +344,6 @@
                             <div class="card text-center py-4 d-flex align-items-stretch">
                                 <div class="card_wrp justify-content-center">
                                     <div class="card_title display-4 text-center my-4" id="skills"> Skills
-                                        <h3 class="card-subtitle my-2"> Jeanie Beatrix Susanna Venter </h3>
                                     </div>
                                     <div class="card_img">
                                         <img class="office" src="./images/sql.png" alt="Microsoft SQL Server"

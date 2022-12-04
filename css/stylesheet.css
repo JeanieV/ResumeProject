@@ -38,7 +38,6 @@ header {
   height: 50%;
 }
 
-
 .card {
   width: 100%;
 }
@@ -81,7 +80,7 @@ h1 {
   color: #DCAE96;
 }
 
-.h3 {
+.h4 {
   color: #DCAE96;
 }
 .p1 {
@@ -95,15 +94,6 @@ h1 {
 }
 
 /* Contact Details*/
-.LinkedIn {
-  width: 60px;
-  outline: 0;
-}
-
-.Gmail {
-  width: 60px;
-}
-
 .Contact {
   width: 60px;
 }
@@ -226,6 +216,64 @@ footer {
   background-color: #47484A;
   text-align: center;
 }
+
+/* Animation */
+
+.LinkedIn {
+  width: 60px;
+}
+
+.LinkedIn:hover {
+  
+  animation-name: LinkedInLogo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes LinkedInLogo {
+  0% {
+    border-style: dashed;
+    border-color: #47484A;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transform: scale(1.5);
+    border-width: 7px;
+    width: 60px;
+    filter: brightness(150%)
+  }
+
+
+  50% {
+    border-style: dashed;
+    border-color: #D49796;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    border-width: 7px;
+    width: 60px;
+    filter: brightness(100%)
+  }
+
+  100% {
+    border-style: dashed;
+    border-color: #D49796;
+    border-radius: 50%;
+    transform-style: rotate(360deg);
+    border-width: 7px;
+    width: 60px;
+    filter: brightness(150%);
+  }
+}
+
+.Gmail {
+  width: 60px;
+}
+
+.Gmail:hover {
+  transform: scale(1.5);
+}
+
 
 /*
 @media only screen and (min-width: 901px) {
