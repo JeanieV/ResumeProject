@@ -56,6 +56,87 @@
                                     CodeSpace
                                     Academy.
                                 </p1>
+
+                                <!-- Form-->
+                                <div class="d-flex align-items-center justify-content-center p-5">
+                                    <div class="form">
+                                        <form action="/action_page.php" method="POST">
+
+                                            <h1 class="display-3 pt-2"> Send me an email </h1>
+                                            <p class="h3"> Kindly enter this form </p>
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="fname"> First Name: </label>
+                                                <input class="IP" type="text" id="fname" name="fname"
+                                                    placeholder="Enter your first name.." required pattern="[a-zA-Z]+"
+                                                    oninvalid="setCustomValidity('Enter alphabet letters only.. ')">
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="lname"> Last Name: </label>
+                                                <input class="IP" type="text" id="lname" name="lname"
+                                                    placeholder="Enter your last name.." required pattern="[a-zA-Z]+"
+                                                    oninvalid="setCustomValidity('Enter alphabet letters only.. ')">
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="country"> Country: </label>
+                                                <select class="DD" id="country" name="country" required>
+                                                    <option hidden selected> Select a country..</option>
+                                                    <option value="southafrica"> South Africa </option>
+                                                    <option value="australia"> Australia </option>
+                                                    <option value="canada"> Canada </option>
+                                                    <option value="usa"> USA </option>
+                                                </select>
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="zip"> ZIP Code: </label>
+                                                <input class="IP" type="number" id="zip" name="zip"
+                                                    placeholder="Enter your ZIP code.." required>
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="email"> Email: </label>
+                                                <input class="IP" type="email" id="email" name="email"
+                                                    placeholder="Enter your Email.." required
+                                                    pattern="[a-z0-9. _%+-]+@[a-z0-9. -]+\. [a-z]{2,}$"
+                                                    title="Enter a valid email address for example [test@test.com]">
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="language"> Language: </label>
+                                                <div class="IP">
+                                                    <input class="p-2" type="checkbox" id="language" name="language" required>
+                                                    <label for="language"> Afrikaans </label>
+                                                    <input class="p-2" type="checkbox" id="language" name="language" required>
+                                                    <label for="language"> English </label>
+                                                    <input class="p-2" type="checkbox" id="language" name="language" required>
+                                                    <label for="language"> Other </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="work"> Work: </label>
+                                                <div class="IP">
+                                                    <input type="radio" id="work" name="work" required>
+                                                    <label for="work"> Employer </label>
+                                                    <input type="radio" id="work" name="work" required>
+                                                    <label for="work"> Recruiter </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="my-4">
+                                                <label class="LB d-block" for="about"> About: </label>
+                                                <textarea id="about" name="about"
+                                                    placeholder="Write something.."></textarea>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn btn-lg btn-success mb-3">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -69,6 +150,7 @@
         <!--Content of Resume-->
         <article class="container-sm-md-lg-xl">
             <div class="Columns">
+                <!-- Education Card-->
                 <div class="row">
                     <div class="col-6 mb-4 d-flex align-items-stretch">
                         <div class="card text-center py-4">
@@ -119,6 +201,7 @@
                         </div>
                     </div>
 
+                    <!-- Experience Card-->
                     <div class="col-6 mb-4">
                         <div class="card text-center py-4 d-flex align-items-stretch">
                             <div class="card_wrp justify-content-center">
@@ -168,6 +251,7 @@
                     </div>
                 </div>
 
+                <!-- Achievements and Leadership Card-->
                 <div class="row">
                     <div class="col-6 mb-4 d-flex align-items-stretch">
                         <div class="card text-center py-4">
@@ -197,6 +281,7 @@
                     </div>
 
 
+                    <!-- Training Card-->
                     <div class="col-6 mb-4">
                         <div class="card text-center py-4">
                             <div class="card_wrp justify-content-center">
@@ -236,6 +321,7 @@
                     </div>
                 </div>
 
+                <!-- Skills Card-->
                 <div class="container">
                     <div class="row">
                         <div class="col-12 mb-4">

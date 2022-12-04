@@ -40,7 +40,7 @@ header {
 
 
 .card {
-width: 100%;
+  width: 100%;
 }
 
 .card_img {
@@ -55,6 +55,7 @@ width: 100%;
   width: 200px;
   height: 220px;
 }
+
 .codespace {
   width: 200px;
   height: 200px;
@@ -80,6 +81,9 @@ h1 {
   color: #DCAE96;
 }
 
+.h3 {
+  color: #DCAE96;
+}
 .p1 {
   color: #D49796;
   background: rgb(0, 0, 0);
@@ -97,7 +101,7 @@ h1 {
 }
 
 .Gmail {
-  width: 60px; 
+  width: 60px;
 }
 
 .Contact {
@@ -114,6 +118,7 @@ h3 {
   text-decoration: none;
   font-size: 20px;
 }
+
 .CodeSpace:hover {
   background-color: #47484A;
   color: #DCAE96;
@@ -145,6 +150,75 @@ h3 {
   color: #DCAE96;
   transform: scale(1.1);
   padding: 3px;
+}
+
+/* Form */
+
+.form {
+  max-width: 550px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+input[type=text],
+select,
+input[type=number],
+input[type=email] {
+  width: 250px;
+  padding: 12px;
+  border-width:4px;
+  border-style: solid;
+  border-color: #EED6D3;
+  border-radius: 4px;
+  resize: vertical;
+  color: #47484A;
+}
+
+textarea {
+  width: 50%;
+  padding: 12px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #EED6D3;
+  border-radius: 4px;
+  resize: vertical;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+
+.LB {
+  float: left;
+  width: 25%;
+  text-align: right;
+  color: #D49796;
+  
+}
+
+.IP {
+  width: 100%;
+  font-size: 16px;
+  color: #D49796;
+  outline: none;
+  resize: none;
+  
+}
+
+.DD {
+  width: 46%;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer of website */
