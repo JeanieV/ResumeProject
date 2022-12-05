@@ -40,7 +40,7 @@
                                     <a href="#skills" class="col py-2 my-5 mx-2">Skills</a>
                                 </div>
 
-                                <p1 class=" p1 d-inline-block h3 mx-5 p-5 lh-lg mb-5">
+                                <p1 class=" p1 d-inline-block h3 mx-5 p-5 lh-lg mb-5 rounded">
                                     <h1 class="display-3 pt-2 pb-5"> Jeanie Beatrix Susanna Venter </h1>
                                     I am an innovative, friendly and
                                     hardworking person who has the ability to work well
@@ -61,7 +61,7 @@
                                 <!-- Form-->
                                 <div class="d-flex align-items-center justify-content-center p-2">
                                     <div class="form">
-                                        <form action="/action_page.php" method="POST" class="was-validated">
+                                        <form action="/action_page.php" method="post" class="was-validated">
 
                                             <h1 class="display-3"> Have any questions? </h1>
                                             <p class="h4"> Kindly enter this form </p>
@@ -112,7 +112,7 @@
                                                 <label class="LB d-block" for="email"> Email: </label>
                                                 <input class="IP" type="email" id="email" name="email"
                                                     placeholder="Enter your Email.."
-                                                    pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                                    pattern="[^ @]*@[^ @]*"
                                                     required>
                                                 <div class="valid-feedback"> Valid. </div>
                                                 <div class="invalid-feedback"> Enter a valid email address </div>
@@ -121,14 +121,11 @@
                                             <div class="my-4">
                                                 <label class="LB d-block" for="language"> Language: </label>
                                                 <div class="IP">
-                                                    <input class="p-2" type="checkbox" id="language" name="language"
-                                                        required>
+                                                    <input class="p-2" type="checkbox" id="language" name="language">
                                                     <label for="language"> Afrikaans </label>
-                                                    <input class="p-2" type="checkbox" id="language" name="language"
-                                                        required>
+                                                    <input class="p-2" type="checkbox" id="language" name="language">
                                                     <label for="language"> English </label>
-                                                    <input class="p-2" type="checkbox" id="language" name="language"
-                                                        required>
+                                                    <input class="p-2" type="checkbox" id="language" name="language">
                                                     <label for="language"> Other </label>
                                                 </div>
                                             </div>
@@ -151,6 +148,7 @@
                                                     placeholder="Write something.."></textarea>
                                             </div>
 
+                                            <!-- Submit Button -->
                                             <div>
                                                 <button class="btn btn-lg btn-success mb-3">Submit</button>
                                             </div>
@@ -402,7 +400,11 @@
 
     <!--Contact details in footer-->
     <footer>
-        <h1 class="display-3 pt-2 pb-5" id="contact"> Contact Details </h1>
+        <h1 class="display-3 pt-2 pb-3" id="contact"> Contact Details </h1>
+        <div>
+        <img class="profile mb-5" src="./images/jeanie.jpg" alt="Profile Picture">
+        </div>
+        <div>
         <a href="https://www.linkedin.com/in/jeanie-venter/" target="_blank">
             <img class="LinkedIn mx-5 mb-4" src="./images/linkedin.png" alt="Jeanie Venter LinkedIn" title="LinkedIn"
                 Attribution='https://www.flaticon.com/free-icon/linkedin'>
@@ -411,6 +413,7 @@
             title="Gmail" target="_blank" alt="Display: Gmail" Attribution='https://www.flaticon.com/free-icons/gmail'>
             <img class="Gmail mx-5 mb-4" src="./images/gmail.png" alt="Jeanie Venter Email">
         </a>
+        </div>
     </footer>
 </body>
 

@@ -51,8 +51,9 @@ header {
 }
 
 .profile {
-  width: 200px;
-  height: 220px;
+  width: 220px;
+  height: 240px;
+  border: 5px #DCAE96 solid;
 }
 
 .codespace {
@@ -83,6 +84,7 @@ h1 {
 .h4 {
   color: #DCAE96;
 }
+
 .p1 {
   color: #D49796;
   background: rgb(0, 0, 0);
@@ -157,7 +159,7 @@ input[type=number],
 input[type=email] {
   width: 250px;
   padding: 12px;
-  border-width:4px;
+  border-width: 4px;
   border-style: solid;
   border-color: #EED6D3;
   border-radius: 4px;
@@ -183,7 +185,7 @@ textarea {
   width: 25%;
   text-align: right;
   color: #D49796;
-  
+
 }
 
 .IP {
@@ -192,7 +194,7 @@ textarea {
   color: #D49796;
   outline: none;
   resize: none;
-  
+
 }
 
 .DD {
@@ -224,7 +226,7 @@ footer {
 }
 
 .LinkedIn:hover {
-  
+
   animation-name: LinkedInLogo;
   animation-duration: 3s;
   animation-iteration-count: infinite;
