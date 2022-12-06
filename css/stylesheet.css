@@ -18,6 +18,15 @@ header {
 }
 
 /*Everything about the menu*/
+
+picture, .position-absolute, .nav {
+  padding: 0 !important;
+  width: 100vw !important;
+  
+}
+
+
+
 .Menu a {
   color: #D49796;
   text-align: center;
@@ -337,10 +346,15 @@ footer {
 
   .bg-img {
     width: 100%;
-    height: 100%;
-    filter: blur(5.5px);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  header {
+    position: sticky;
+  }
+
+  main {
+    position: relative;
   }
 }
 
