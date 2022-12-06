@@ -22,9 +22,9 @@
         <div>
             <div class="row">
                 <picture>
-                    <source srcset="./images/small.jpg" media="(max-width:480px)">
-                    <source srcset="./images/medium.jpg" media="(max-width: 800px)">
-                    <source srcset="./images/large.jpg" media="(max-width: 1500px)">
+                    <source srcset="./images/small.jpg" media="(max-width:600px)">
+                    <source srcset="./images/medium.jpg" media="(max-width: 1000px)">
+                    <source srcset="./images/large.jpg" media="(max-width: 1900px)">
                     <img class="bg-img" src="./images/large.jpg" alt="Background Image">
                 </picture>
                 <div class="position-absolute">
@@ -61,83 +61,96 @@
                                 <!-- Form-->
                                 <div class="d-flex align-items-center justify-content-center p-2">
                                     <div class="form">
-                                        <form action="/action_page.php" method="post" class="was-validated">
+                                        <form action="/action_page.php" method="post">
+                                            <div class="was-validated">
+                                                <h1 class="display-3"> Have any questions? </h1>
+                                                <p class="h4"> Kindly enter this form </p>
 
-                                            <h1 class="display-3"> Have any questions? </h1>
-                                            <p class="h4"> Kindly enter this form </p>
+                                                <!-- Name-->
+                                                <div class="my-3">
+                                                    <label class="LB d-block" for="fname"> First Name: </label>
+                                                    <input class="IP" type="text" id="fname" name="fname"
+                                                        placeholder="Enter your first name.." required
+                                                        pattern="[a-zA-Z]+">
+                                                    <div class="valid-feedback"> Valid. </div>
+                                                    <div class="invalid-feedback"> Enter alphabet letters only. </div>
+                                                </div>
 
-                                            <!-- Name-->
-                                            <div class="my-3">
-                                                <label class="LB d-block" for="fname"> First Name: </label>
-                                                <input class="IP" type="text" id="fname" name="fname"
-                                                    placeholder="Enter your first name.." required pattern="[a-zA-Z]+">
-                                                <div class="valid-feedback"> Valid. </div>
-                                                <div class="invalid-feedback"> Enter alphabet letters only. </div>
+                                                <!-- Surname-->
+                                                <div class="my-3">
+                                                    <label class="LB d-block" for="lname"> Last Name: </label>
+                                                    <input class="IP" type="text" id="lname" name="lname"
+                                                        placeholder="Enter your last name.." required
+                                                        pattern="[a-zA-Z]+">
+                                                    <div class="valid-feedback"> Valid. </div>
+                                                    <div class="invalid-feedback"> Enter alphabet letters only. </div>
+                                                </div>
+
+                                                <!-- Country-->
+                                                <div class="my-3">
+                                                    <label class="LB d-block" for="country"> Country: </label>
+                                                    <select class="DD" id="country" name="country" required>
+                                                        <option value=""> Select your country </option>
+                                                        <option value="southafrica"> South Africa </option>
+                                                        <option value="australia"> Australia </option>
+                                                        <option value="canada"> Canada </option>
+                                                        <option value="usa"> USA </option>
+                                                    </select>
+                                                    <div class="valid-feedback"> Valid. </div>
+                                                    <div class="invalid-feedback"> Choose your country </div>
+                                                </div>
+
+                                                <!-- Zip Code-->
+                                                <div class="my-3">
+                                                    <label class="LB d-block" for="zip"> ZIP Code: </label>
+                                                    <input class="IP" type="number" id="zip" name="zip"
+                                                        placeholder="Enter your ZIP code.." required>
+                                                    <div class="valid-feedback"> Valid. </div>
+                                                    <div class="invalid-feedback"> Enter your Zip Code </div>
+                                                </div>
+
+                                                <!-- Email-->
+                                                <div class="my-3">
+                                                    <label class="LB d-block" for="email"> Email: </label>
+                                                    <input class="IP" type="email" id="email" name="email"
+                                                        placeholder="Enter your Email.." pattern="[^ @]*@[^ @]*"
+                                                        required>
+                                                    <div class="valid-feedback"> Valid. </div>
+                                                    <div class="invalid-feedback"> Enter a valid email address </div>
+                                                </div>
                                             </div>
-
-                                            <!-- Surname-->
-                                            <div class="my-3">
-                                                <label class="LB d-block" for="lname"> Last Name: </label>
-                                                <input class="IP" type="text" id="lname" name="lname"
-                                                    placeholder="Enter your last name.." required pattern="[a-zA-Z]+">
-                                                <div class="valid-feedback"> Valid. </div>
-                                                <div class="invalid-feedback"> Enter alphabet letters only. </div>
-                                            </div>
-
-                                            <!-- Country-->
-                                            <div class="my-3">
-                                                <label class="LB d-block" for="country"> Country: </label>
-                                                <select class="DD" id="country" name="country" required>
-                                                    <option value=""> Select your country </option>
-                                                    <option value="southafrica"> South Africa </option>
-                                                    <option value="australia"> Australia </option>
-                                                    <option value="canada"> Canada </option>
-                                                    <option value="usa"> USA </option>
-                                                </select>
-                                                <div class="valid-feedback"> Valid. </div>
-                                                <div class="invalid-feedback"> Choose your country </div>
-                                            </div>
-
-                                            <!-- Zip Code-->
-                                            <div class="my-3">
-                                                <label class="LB d-block" for="zip"> ZIP Code: </label>
-                                                <input class="IP" type="number" id="zip" name="zip"
-                                                    placeholder="Enter your ZIP code.." required>
-                                                <div class="valid-feedback"> Valid. </div>
-                                                <div class="invalid-feedback"> Enter your Zip Code </div>
-                                            </div>
-
-                                            <!-- Email-->
-                                            <div class="my-3">
-                                                <label class="LB d-block" for="email"> Email: </label>
-                                                <input class="IP" type="email" id="email" name="email"
-                                                    placeholder="Enter your Email.."
-                                                    pattern="[^ @]*@[^ @]*"
-                                                    required>
-                                                <div class="valid-feedback"> Valid. </div>
-                                                <div class="invalid-feedback"> Enter a valid email address </div>
-                                            </div>
-
                                             <div class="my-4">
                                                 <label class="LB d-block" for="language"> Language: </label>
-                                                <div class="IP">
-                                                    <input class="p-2" type="checkbox" id="language" name="language">
-                                                    <label for="language"> Afrikaans </label>
-                                                    <input class="p-2" type="checkbox" id="language" name="language">
-                                                    <label for="language"> English </label>
-                                                    <input class="p-2" type="checkbox" id="language" name="language">
-                                                    <label for="language"> Other </label>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="language"
+                                                        name="language">
+                                                    <label class="form-check-label" for="language"> Afrikaans
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="language"
+                                                        name="language">
+                                                    <label class="form-check-label" for="language"> English </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="language"
+                                                        name="language">
+                                                    <label class="form-check-label" for="language"> Other </label>
                                                 </div>
                                             </div>
 
                                             <!-- Work-->
                                             <div class="my-3">
                                                 <label class="LB d-block" for="work"> Work: </label>
-                                                <div class="IP">
-                                                    <input type="radio" id="work" name="work" required>
-                                                    <label for="work"> Employer </label>
-                                                    <input type="radio" id="work" name="work" required>
-                                                    <label for="work"> Recruiter </label>
+                                                <div class="C form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" id="work" name="work"
+                                                        required>
+                                                    <label class="form-check-label" for="work"> Employer </label>
+                                                </div>
+                                                <div class="C form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" id="work" name="work"
+                                                        required>
+                                                    <label class="form-check-label" for="work"> Recruiter </label>
                                                 </div>
                                             </div>
 
@@ -170,7 +183,7 @@
             <div class="Columns">
                 <!-- Education Card-->
                 <div class="row">
-                    <div class="col-6 mb-4 d-flex align-items-stretch">
+                    <div class="col-6 mb-4 d-flex ">
                         <div class="card text-center py-4">
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="education">Education
@@ -220,7 +233,7 @@
 
                     <!-- Experience Card-->
                     <div class="col-6 mb-4">
-                        <div class="card text-center py-4 d-flex align-items-stretch">
+                        <div class="card text-center py-4 d-flex">
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="experience"> Experience
                                 </div>
@@ -269,14 +282,14 @@
 
                 <!-- Achievements and Leadership Card-->
                 <div class="row">
-                    <div class="col-6 mb-4 d-flex align-items-stretch">
+                    <div class="col-6 mb-4 d-flex ">
                         <div class="card text-center py-4">
                             <div class="card_wrp justify-content-center">
                                 <div class="card_title display-4 text-center my-4" id="achievements"> Achievements and
                                     Leadership
                                 </div>
                                 <div class="card_img">
-                                    <img src="./images/golden.jfif" alt="Golden Key Society" title="Golden Key Society"
+                                    <img class="golden" src="./images/golden.jfif" alt="Golden Key Society" title="Golden Key Society"
                                         Attribution="https://www.google.com/imgres?imgurl=https%3A%2F%2Finternational.uwc.ac.za%2Fwp-content%2Fuploads%2F2020%2F04%2FGolden_Key_Logo.png&imgrefurl=https%3A%2F%2Finternational.uwc.ac.za%2Fco-operation%2Fnetworks%2Fgolden-key-international-honour-society%2F&tbnid=f5Ty73Un-BgBRM&vet=12ahUKEwjXyLC7ttv7AhW8g84BHX8TBQAQMygAegUIARC_AQ..i&docid=6x4vaZiVH_tCGM&w=300&h=291&q=golden%20key%20society&ved=2ahUKEwjXyLC7ttv7AhW8g84BHX8TBQAQMygAegUIARC_AQ">
                                 </div>
 
@@ -339,7 +352,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 mb-4">
-                            <div class="card text-center py-4 d-flex align-items-stretch">
+                            <div class="card text-center py-4 d-flex">
                                 <div class="card_wrp justify-content-center">
                                     <div class="card_title display-4 text-center my-4" id="skills"> Skills
                                     </div>
@@ -402,17 +415,18 @@
     <footer>
         <h1 class="display-3 pt-2 pb-3" id="contact"> Contact Details </h1>
         <div>
-        <img class="profile mb-5" src="./images/jeanie.jpg" alt="Profile Picture">
+            <img class="profile mb-5" src="./images/jeanie.jpg" alt="Profile Picture">
         </div>
         <div>
-        <a href="https://www.linkedin.com/in/jeanie-venter/" target="_blank">
-            <img class="LinkedIn mx-5 mb-4" src="./images/linkedin.png" alt="Jeanie Venter LinkedIn" title="LinkedIn"
-                Attribution='https://www.flaticon.com/free-icon/linkedin'>
-        </a>
-        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=venterjeaniebs@gmail.com&su=Inquiry#inbox?compose=DmwnWrRvwTfpnChZgCsgXdgjkCNPfXGmPCBRXtvhqSbCXHFCRBrBbChRLTMgScpRQpSbpfsgSfqb"
-            title="Gmail" target="_blank" alt="Display: Gmail" Attribution='https://www.flaticon.com/free-icons/gmail'>
-            <img class="Gmail mx-5 mb-4" src="./images/gmail.png" alt="Jeanie Venter Email">
-        </a>
+            <a href="https://www.linkedin.com/in/jeanie-venter/" target="_blank">
+                <img class="LinkedIn mx-5 mb-4" src="./images/linkedin.png" alt="Jeanie Venter LinkedIn"
+                    title="LinkedIn" Attribution='https://www.flaticon.com/free-icon/linkedin'>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=venterjeaniebs@gmail.com&su=Inquiry#inbox?compose=DmwnWrRvwTfpnChZgCsgXdgjkCNPfXGmPCBRXtvhqSbCXHFCRBrBbChRLTMgScpRQpSbpfsgSfqb"
+                title="Gmail" target="_blank" alt="Display: Gmail"
+                Attribution='https://www.flaticon.com/free-icons/gmail'>
+                <img class="Gmail mx-5 mb-4" src="./images/gmail.png" alt="Jeanie Venter Email">
+            </a>
         </div>
     </footer>
 </body>

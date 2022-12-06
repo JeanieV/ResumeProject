@@ -50,13 +50,13 @@ header {
   overflow: hidden;
 }
 
-.profile {
-  width: 220px;
-  height: 240px;
-  border: 5px #DCAE96 solid;
+/* Images on cards */
+.codespace {
+  width: 200px;
+  height: 200px;
 }
 
-.codespace {
+.hfm {
   width: 200px;
   height: 200px;
 }
@@ -64,6 +64,11 @@ header {
 .up {
   width: 200px;
   height: 200px;
+}
+
+.tutors {
+  width: 300px;
+  height: 120px;
 }
 
 .office {
@@ -76,7 +81,12 @@ header {
   height: 50px;
 }
 
+.golden {
+  width: 200px;
+  height: 200px;
+}
 
+/* Headings */
 h1 {
   color: #DCAE96;
 }
@@ -100,7 +110,13 @@ h1 {
   width: 60px;
 }
 
-/*Heading 3 tags*/
+.profile {
+  width: 220px;
+  height: 250px;
+  border: 5px #DCAE96 solid;
+}
+
+/*Heading inside cards*/
 h3 {
   color: #47484A
 }
@@ -145,7 +161,6 @@ h3 {
 }
 
 /* Form */
-
 .form {
   max-width: 550px;
   width: 100%;
@@ -184,17 +199,23 @@ textarea {
   float: left;
   width: 25%;
   text-align: right;
-  color: #D49796;
-
+  color: #DCAE96;
+  font-size: 18px;
 }
+
 
 .IP {
   width: 100%;
   font-size: 16px;
-  color: #D49796;
+  color: #DCAE96;
   outline: none;
   resize: none;
 
+}
+
+
+.form-check-label {
+  color: #DCAE96 !important;
 }
 
 .DD {
@@ -220,7 +241,6 @@ footer {
 }
 
 /* Animation */
-
 .LinkedIn {
   width: 60px;
 }
@@ -277,22 +297,82 @@ footer {
 }
 
 
-/*
-@media only screen and (min-width: 901px) {
-  .Menu a {
-    font-size: 29px;
-  }
 
-}
-
-
-@media only screen and (max-width: 900px) {
-  .Menu a {
-    font-size: 15px;
-  }
-}
-
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  .Columns {
+    width: 100%;
+    height: 80%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .up {
+    width: 145px;
+    height: 160px;
+  }
+
+  .hfm {
+    width: 150px;
+    height: 160px;
+  }
+
+  .codespace {
+    width: 150px;
+    height: 160px;
+  }
+
+  .tutors {
+    width: 150px;
+    height: 140px;
+  }
+
+  .golden {
+    width: 150px;
+    height: 160px;
+  }
+
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    filter: blur(5.5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/*
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    filter: blur(5.5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .Menu a {
     font-size: 10px;
   }
@@ -303,13 +383,12 @@ footer {
     line-height: 15px;
   }
 
-  .responsiveClass {
+  .Columns {
     display: flex;
     flex-direction: column;
   }
 
-  .responsiveClass .card_img {
+  .Columns .card_img {
     margin: auto;
   }
 }
-*/
