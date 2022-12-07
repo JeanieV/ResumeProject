@@ -32,8 +32,8 @@ header {
 }
 
 .nav-item {
-padding-left: 20px;
-padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .Menu a {
@@ -325,16 +325,18 @@ footer {
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 300px) {
 
   .Columns {
-    width: 100%;
-    height: 80%;
+    width: 100vw;
+    margin-top: 650vw;
   }
 
   .card {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
   .up {
@@ -353,8 +355,8 @@ footer {
   }
 
   .tutors {
-    width: 150px;
-    height: 140px;
+    width: 160px;
+    height: 130px;
   }
 
   .golden {
@@ -364,7 +366,7 @@ footer {
 
   .bg-img {
     width: 100vw;
-    height: 470vw;
+    height: 180vw;
   }
 
   .Menu a {
@@ -384,19 +386,179 @@ footer {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
   }
-  
+
   .P1:hover {
     background-color: #47484A;
   }
 
+  .LB {
+    width: fit-content;
+    text-align: center;
+    color: #DCAE96;
+    font-size: 17px;
+  }
 
+  .IP {
+    width: 200px !important;
+    font-size: 10px;
+    color: #DCAE96;
+  }
+
+  .DD {
+    width: fit-content;
+    font-size: 10px;
+  }
+
+  .form {
+    max-width: 550px;
+    width: 80%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .form-check-label {
+    color: #DCAE96 !important;
+    text-align: center;
+    font-size: 13px;
+  }
+  .form-check-input {
+    color: #DCAE96 !important;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 60%;
+    font-size: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #EED6D3;
+    border-radius: 4px;
+    resize: vertical;
+    height: 200px;
+    margin-bottom: 10px;
+  }
 }
 
 
 
+@media only screen and (min-width: 301px) {
+  
+  .Columns {
+    width: 100vw;
+    margin-top: 630vw;
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+  .card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .up {
+    width: 145px;
+    height: 160px;
+  }
+
+  .hfm {
+    width: 150px;
+    height: 160px;
+  }
+
+  .codespace {
+    width: 150px;
+    height: 160px;
+  }
+
+  .tutors {
+    width: 160px;
+    height: 130px;
+  }
+
+  .golden {
+    width: 150px;
+    height: 160px;
+  }
+
+  .bg-img {
+    width: 100vw;
+    height: 180vw;
+  }
+
+  .Menu a {
+    color: #D49796;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .P1 {
+    color: #D49796;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .P1:hover {
+    background-color: #47484A;
+  }
+
+  .LB {
+    float: left;
+    width: fit-content;
+    text-align: center;
+    color: #DCAE96;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
+  .IP {
+    width: 200px !important;
+    font-size: 10px;
+    color: #DCAE96;
+  }
+
+  .DD {
+    width: fit-content;
+    font-size: 10px;
+  }
+
+  .form {
+    max-width: 550px;
+    width: 80%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .form-check-label {
+    color: #DCAE96 !important;
+    text-align: center;
+    font-size: 13px;
+  }
+  .form-check-input {
+    color: #DCAE96 !important;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 60%;
+    font-size: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #EED6D3;
+    border-radius: 4px;
+    resize: vertical;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
@@ -406,37 +568,3 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
-
-/*
-@media only screen and (max-width: 600px) {
-  header {
-    position: relative;
-  }
-
-  .bg-img {
-    width: 100%;
-    height: 100%;
-    filter: blur(5.5px);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .Menu a {
-    font-size: 10px;
-  }
-
-  .Menu {
-    display: flex;
-    flex-direction: column;
-    line-height: 15px;
-  }
-
-  .Columns {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Columns .card_img {
-    margin: auto;
-  }
-}
