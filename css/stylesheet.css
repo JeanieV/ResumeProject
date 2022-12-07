@@ -326,7 +326,7 @@ footer {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
   .Columns {
     width: 100%;
@@ -364,7 +364,7 @@ footer {
 
   .bg-img {
     width: 100vw;
-    height: 430vw;
+    height: 470vw;
   }
 
   .Menu a {
@@ -379,7 +379,6 @@ footer {
     padding: 0;
   }
 
-
   .P1 {
     color: #D49796;
     background: rgb(0, 0, 0);
@@ -389,7 +388,6 @@ footer {
   .P1:hover {
     background-color: #47484A;
   }
-
 
 
 }
