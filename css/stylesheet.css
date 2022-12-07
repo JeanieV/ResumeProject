@@ -1,6 +1,7 @@
 /* Header of website */
 header {
   text-align: center;
+  max-width: 98.9vw !important;
 }
 
 .background {
@@ -10,8 +11,8 @@ header {
 
 /* Background Image */
 .bg-img {
-  width: 100%;
-  height: 100%;
+  width: 98.9vw;
+  height: 140vw;
   filter: blur(5.5px);
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,13 +20,21 @@ header {
 
 /*Everything about the menu*/
 
-picture, .position-absolute, .nav {
-  padding: 0 !important;
-  width: 100vw !important;
-  
+.row {
+  --bs-gutter-x: 0 !important;
+  max-width: 98.9vw !important;
 }
 
 
+.position-absolute {
+  width: 98.9vw !important;
+  max-width: 98.9vw !important;
+}
+
+.nav-item {
+padding-left: 20px;
+padding-right: 20px;
+}
 
 .Menu a {
   color: #D49796;
@@ -41,6 +50,11 @@ picture, .position-absolute, .nav {
 }
 
 /*Content part of website*/
+
+.MCards {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 
 .Columns {
   width: 100%;
@@ -104,19 +118,23 @@ h1 {
   color: #DCAE96;
 }
 
-.p1 {
+.P1 {
   color: #D49796;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
 }
 
-.p1:hover {
+.P1:hover {
   background-color: #47484A;
 }
 
 /* Contact Details*/
 .Contact {
   width: 60px;
+}
+
+.Contact:hover {
+  transform: scale(1.1);
 }
 
 .profile {
@@ -257,7 +275,7 @@ footer {
 .LinkedIn:hover {
 
   animation-name: LinkedInLogo;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-play-state: running;
@@ -345,17 +363,35 @@ footer {
   }
 
   .bg-img {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 430vw;
   }
 
-  header {
-    position: sticky;
+  .Menu a {
+    color: #D49796;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
   }
 
-  main {
-    position: relative;
+  .text {
+    font-size: 15px;
+    padding: 0;
   }
+
+
+  .P1 {
+    color: #D49796;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .P1:hover {
+    background-color: #47484A;
+  }
+
+
+
 }
 
 
