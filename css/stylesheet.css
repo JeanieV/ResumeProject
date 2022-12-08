@@ -821,7 +821,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 883px) {
+@media only screen and (min-width: 883px) {
 
   .bg-img {
     width: 100vw;
@@ -884,7 +884,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
 
   .bg-img {
     width: 100vw;
@@ -1028,6 +1028,24 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1048px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 270vh;
+    max-height: 270vh;
+  }
+}
+
+@media only screen and (min-width: 1049px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 300vh;
+    max-height: 300vh;
+  }
+}
+
 @media only screen and (min-width: 1090px) {
 
   .bg-img {
@@ -1054,13 +1072,102 @@ footer {
     max-height: 215vh;
   }
 }
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1096px) {
 
   .bg-img {
     width: 100vw;
     height: 300vh;
     max-height: 300vh;
+  }
+}
+
+@media only screen and (min-width: 1105px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 220vh;
+    max-height: 220vh;
+  }
+}
+
+@media only screen and (min-width: 1106px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 300vh;
+    max-height: 300vh;
+  }
+}
+
+@media only screen and (min-width: 1115px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 220vh;
+    max-height: 220vh;
+  }
+}
+
+@media only screen and (min-width: 1116px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 300vh;
+    max-height: 300vh;
+  }
+}
+
+@media only screen and (min-width: 1135px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 220vh;
+    max-height: 220vh;
+  }
+}
+
+@media only screen and (min-width: 1136px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 270vh;
+    max-height: 270vh;
+  }
+}
+
+@media only screen and (min-width: 1155px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 220vh;
+    max-height: 220vh;
+  }
+}
+
+@media only screen and (min-width: 1156px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 270vh;
+    max-height: 270vh;
+  }
+}
+
+@media only screen and (min-width: 1195px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 220vh;
+    max-height: 220vh;
+  }
+}
+
+@media only screen and (min-width: 1196px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 270vh;
+    max-height: 270vh;
   }
 }
 
@@ -1071,4 +1178,8 @@ footer {
     height: 300vh;
     max-height: 300vh;
   }
+
+  
 }
+
+
