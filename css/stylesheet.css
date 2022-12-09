@@ -1,7 +1,14 @@
+body {
+  max-width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* Header of website */
 header {
   text-align: center;
   max-width: 98.9vw !important;
+  width: 98.9vw;
 }
 
 .background {
@@ -138,6 +145,10 @@ h1 {
   transform: scale(1.1);
 }
 
+.lead {
+  font-size: 23px;
+  color: #EED6D3;
+}
 .profile {
   width: 220px;
   height: 250px;
@@ -375,7 +386,7 @@ footer {
     color: #D49796;
     text-align: center;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .text {
@@ -439,6 +450,10 @@ footer {
     border-radius: 4px;
     height: 200px;
     margin-bottom: 10px;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
 
