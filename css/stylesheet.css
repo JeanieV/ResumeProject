@@ -274,6 +274,12 @@ textarea {
 }
 
 /* Footer of website */
+.jumbotron {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
 footer {
   background-color: #47484A;
   text-align: center;
