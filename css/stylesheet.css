@@ -275,7 +275,7 @@ textarea {
 
 /* Footer of website */
 .jumbotron {
-  width: 100%;
+  width: 100vw;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
 }
@@ -582,6 +582,10 @@ footer {
     height: 200px;
     margin-bottom: 10px;
   }
+
+  body {
+    overflow-x: hidden;
+  }
 }
 
 
@@ -643,6 +647,10 @@ footer {
     height: 200px;
     margin-bottom: 10px;
   }
+
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -700,6 +708,9 @@ footer {
     resize: vertical;
     height: 200px;
     margin-bottom: 10px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
@@ -1185,6 +1196,91 @@ footer {
     margin-bottom: 10px;
   }
 }
+
+@media only screen and (min-width: 1080px) {
+
+  .bg-img {
+    width: 100vw;
+    height: 270vh;
+    max-height: 270vh;
+  }
+
+  .up {
+    width: 150px;
+    height: 160px;
+  }
+
+  .hfm {
+    width: 150px;
+    height: 160px;
+  }
+
+  .codespace {
+    width: 150px;
+    height: 160px;
+  }
+
+  .tutors {
+    width: 200px;
+    height: 100px;
+    padding-left: 0;
+  }
+
+  .golden {
+    width: 150px;
+    height: 160px;
+  }
+
+  .Menu a {
+    color: #D49796;
+    text-align: center;
+    text-decoration: none;
+    font-size: 27px;
+  }
+
+  .text {
+    font-size: 23px;
+    padding: 0;
+  }
+
+  .LB {
+    width: fit-content;
+    text-align: center;
+    color: #DCAE96;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .IP {
+    width: 250px !important;
+    font-size: 19px;
+    color: #DCAE96;
+  }
+
+  .DD {
+    width: 250px;
+    font-size: 19px;
+  }
+
+  .form-check-label {
+    color: #DCAE96 !important;
+    text-align: center;
+    font-size: 19px;
+  }
+  
+  textarea {
+    width: 60%;
+    font-size: 18px !important;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #EED6D3;
+    border-radius: 4px;
+    resize: vertical;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+}
+
 
 @media only screen and (min-width: 1100px) {
 
